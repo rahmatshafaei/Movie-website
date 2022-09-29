@@ -1,14 +1,31 @@
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
 }
+
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
 .mainKort{
-    border: 2px inset black;
-    display: grid;
-    width: 40%;
-    height: 60vh;
-    float: left;
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items:center;
+    width:20%;
+    border:2px solid red;
+    padding:25px;
 }
-.kort{
-    height: 30%;
+
+.mainKort>img{
+    width:45%;
+}
+#kort{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    gap:25px;
+
 }
