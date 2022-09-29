@@ -5,20 +5,22 @@ const API_URL = BASE_URL + '/discover/movie?sort_by=popularity.desc&' +
 const IMG_URL = 'https://image.tmdb.org/t/p/w500';
 const searchURL = BASE_URL + '/search/movie?' + API_KEY;
 
-console.log(searchURL);
 
-$.get(API_URL, function (data) {
+
+/*$.get(API_URL, function (data) {
     $("#title").text(data.results[0].original_title);
     let imgg = "https://image.tmdb.org/t/p/w500" + data
         .results[0]
         .poster_path;
     $("#poster").attr('src', imgg);
 });
+*/
+const genres = []
+const main = document.getElementById('main');
+const form = document.getElementById('form');
+const search = document.getElementById('search');
+const tagsEl = document.getElementById('tags');
 
-data.array.forEach(skapaloop => {
-    function loopa(data) {
-        var dat = document.createElement(data);
-        
-    }
-    
-});
+const prev = document.getElementById('prev')
+const next = document.getElementById('next')
+const current = document.getElementById('current')
