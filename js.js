@@ -14,3 +14,11 @@ $.get(API_URL, function (data) {
         .poster_path;
     $("#poster").attr('src', imgg);
 });
+
+data.array.forEach(skapaloop => {
+    function loopa(data) {
+        var dat = document.createElement(data);
+        
+    }
+    
+});
