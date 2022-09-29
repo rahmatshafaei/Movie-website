@@ -6,14 +6,17 @@ const IMG_URL = 'https://image.tmdb.org/t/p/w500';
 const searchURL = BASE_URL + '/search/movie?' + API_KEY;
 
 
-
-$.get(API_URL, function (data) {
-    console.log(data.results)
+//const {title, poster_path, vote_average, overview, id} = movie;
+$.get(API_URL, function (data)
+ {
+    console.log(data)
     data.results.forEach(i => {
-        console.log(i.title)
+
+        // var video = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${i.id}" title="placeholder" class="embed hide" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        `
         var title = `<h1>${i.title}</h1>`
-        var kort ="<h1>${title}</h1>"
-        $("#kort").append(title)
+        var img = `<img class="kort" src="${IMG_URL + i.poster_path}" alt="film bild">`
+        var kort = `<div onclick="bytSida(${i.id})" class="mainKort">${title+img}</div>`
+        $("#kort").append(kort)
         
     });
     // $("#title").text(data.results[0].original_title);
@@ -22,3 +25,7 @@ $.get(API_URL, function (data) {
     //     .poster_path;
     // $("#poster").attr('src', imgg);
 });
+
+function bytSida(id){
+    window.location.href = `trailer.html/?id=${id}`
+}

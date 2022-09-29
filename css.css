@@ -1,0 +1,14 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.mainKort{
+    border: 2px inset black;
+    display: grid;
+    width: 40%;
+    height: 60vh;
+    float: left;
+}
+.kort{
+    height: 30%;
+}
