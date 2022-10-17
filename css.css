@@ -20,13 +20,13 @@ body {
 }
 
 .mainKort > img {
-    width: 100%;
+    width: 45%;
 }
 #kort {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 25px;
+    grid-row-gap: 20px;
 }
 iframe {
     align-items: center;
