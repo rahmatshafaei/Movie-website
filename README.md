@@ -25,5 +25,5 @@ These instructions will get you a copy of the project up and running on your loc
 - [The Movie DB API](https://www.themoviedb.org/)
 
 ### Authors
-- [Your Name](https://github.com/rahmatshafaei)
+- [Rahmat Shafaei](https://github.com/rahmatshafaei)
 
