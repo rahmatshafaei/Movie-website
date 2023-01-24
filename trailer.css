@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+iframe {
+    padding-left: 40px;
+    padding-top: 70px;
+    width: 95%;
+    height: 600px; 
+    border-radius: 30px;
+    overflow: auto;
+    display: flex; 
+  align-items: center; 
+  justify-content: center;
+  }
+  
+  
